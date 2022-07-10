@@ -1,0 +1,8 @@
+.productCard {
+	width: 24%;
+	height: auto;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+}
