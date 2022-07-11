@@ -1,21 +1,17 @@
 import React from "react";
 import Button from "../UI/Button/Button";
 import classes from "./ProductCard.module.css";
-import axios from "axios";
 
-const ProductCard = () => {
-	const getData = () => {
-		axios.get("product.json").then((response) => {
-			console.log(response.data);
-		});
-	};
-
+const ProductCard = (props) => {
 	return (
 		<div className={classes.productCard}>
-			<div>Img link</div>
-			<h3>Product</h3>
-			<h2>Price</h2>
-			<Button onClick={() => getData()} />
+			<div>{props.picture}</div>
+			<h3>{props.caption}</h3>
+			{props.price && (
+				<h2 className={classes.productCard__price}>{props.price} руб.</h2>
+			)}
+
+			<Button product={props} />
 		</div>
 	);
 };

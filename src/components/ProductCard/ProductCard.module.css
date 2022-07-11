@@ -6,3 +6,8 @@
 	text-align: center;
 	padding: 10px;
 }
+
+.productCard__price {
+	color: rgb(118, 202, 231);
+	margin: 20px 0;
+}

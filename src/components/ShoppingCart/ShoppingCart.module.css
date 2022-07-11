@@ -1,0 +1,14 @@
+.shoppingCart {
+	padding: 15px;
+	background: linear-gradient(45deg, #ffffff, #eef5ff);
+}
+
+.shoppingCart__productsList {
+	height: 20vh;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.shoppingCart__table {
+	width: 100%;
+}
