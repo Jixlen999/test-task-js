@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import classes from "./ShoppingCart.module.css";
+import { Context } from "../../Context";
 
 const ShoppingCart = () => {
-	let [productsList, setProductsList] = useState([]);
-	let productKeys = Object.keys(sessionStorage);
+	const [products, setProducts] = useContext(Context);
 
 	return (
 		<div className={classes.shoppingCart}>
@@ -19,10 +19,15 @@ const ShoppingCart = () => {
 						</tr>
 					</thead>
 					<tbody>
-						{productKeys.map((key) => {
+						{products.map((pr) => {
 							return (
-								<tr>
-									<td>{JSON.parse(sessionStorage[key]).caption}</td>
+								<tr key={pr.caption}>
+									<td>{pr.caption}</td>
+									<td>
+										<input type="number" defaultValue={pr.amount} min={1} />
+									</td>
+									<td>{pr.price}</td>
+									<td>Сумма = кол * цена</td>
 								</tr>
 							);
 						})}
