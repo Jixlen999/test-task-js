@@ -10,7 +10,6 @@ const Button = ({ product, ...props }) => {
 		let pr = Object.assign({}, product);
 		let prod = productsAmount.find((el) => el.name === pr.name);
 		if (prod) {
-			console.log("yest");
 			let oldName = prod.name;
 			let newAmount = ++prod.amount;
 			let oldPic = prod.picture;
