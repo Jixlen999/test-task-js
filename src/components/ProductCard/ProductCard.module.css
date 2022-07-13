@@ -7,6 +7,12 @@
 	padding: 10px;
 }
 
+@media screen and (max-width: 600px) {
+	.productCard {
+		width: auto;
+	}
+}
+
 .productCard__price {
 	color: rgb(118, 202, 231);
 	margin: 20px 0;

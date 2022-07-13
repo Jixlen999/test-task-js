@@ -62,7 +62,7 @@ const ShoppingCart = () => {
 								return (
 									<tr key={pr.name}>
 										<td>{pr.name}</td>
-										<td>
+										<td className={classes.table__input}>
 											<button onClick={() => changeProductAmount(pr, "down")}>
 												-
 											</button>

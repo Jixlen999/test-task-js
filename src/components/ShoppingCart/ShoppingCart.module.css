@@ -75,4 +75,25 @@ button:hover {
 
 input {
 	border: 1.5px solid rgb(118, 202, 231);
+	width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+	table {
+		background: #fff;
+		padding: 2rem;
+		font-size: 0.8rem;
+	}
+	.table__input {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	input {
+		width: 1.5rem;
+		text-align: center;
+	}
 }
