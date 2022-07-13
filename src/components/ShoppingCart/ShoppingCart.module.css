@@ -1,6 +1,6 @@
 .shoppingCart {
 	padding: 15px;
-	background: linear-gradient(45deg, #ffffff, #eef5ff);
+	background: #f1f5f9;
 }
 
 .shoppingCart__productsList {
@@ -11,4 +11,68 @@
 
 .shoppingCart__table {
 	width: 100%;
+}
+
+table {
+	background: #fff;
+	padding: 20px;
+}
+
+table tr {
+	height: 2rem;
+}
+
+thead > tr {
+	background: #f1f5f9;
+}
+
+tbody tr:nth-child(even) {
+	background: #f1f5f9;
+}
+tbody tr:nth-child(odd) {
+	background: #fff;
+}
+
+tfoot > tr {
+	background: #fff;
+}
+
+tbody > tr > td {
+	font-weight: 600;
+}
+
+.table__deleteBtn {
+	cursor: pointer;
+}
+
+.table__deleteBtn:hover {
+	color: red;
+}
+
+.table__amountInput::-webkit-outer-spin-button,
+.table__amountInput::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+button {
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1.5px solid rgb(118, 202, 231);
+	background: #fff;
+	text-align: center;
+	margin: 0 5px;
+	font-weight: 700;
+	color: rgb(118, 202, 231);
+	cursor: pointer;
+	transition: all 0.5s ease;
+	text-transform: uppercase;
+}
+
+button:hover {
+	background-color: rgb(118, 202, 231);
+	color: #fff;
+}
+
+input {
+	border: 1.5px solid rgb(118, 202, 231);
 }

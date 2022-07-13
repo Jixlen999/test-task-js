@@ -6,7 +6,7 @@ const ProductCard = (props) => {
 	return (
 		<div className={classes.productCard}>
 			<div>{props.picture}</div>
-			<h3>{props.caption}</h3>
+			<h3>{props.name}</h3>
 			{props.price && (
 				<h2 className={classes.productCard__price}>{props.price} руб.</h2>
 			)}

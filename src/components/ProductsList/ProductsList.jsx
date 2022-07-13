@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import classes from "./ProductsList.module.css";
 
@@ -16,10 +16,10 @@ const ProductsList = ({ products }) => {
 									<ProductCard
 										key={product.SKU[key].ID}
 										picture={product.PICTURE}
-										caption={
+										name={
 											product.SKU[key].LENGTH
-												? `${product.SKU[key].NAME} - длина ${product.SKU[key].LENGTH} мм`
-												: `${product.SKU[key].NAME}`
+												? `${product.NAME} - длина ${product.SKU[key].LENGTH} мм`
+												: `${product.NAME}`
 										}
 										price={product.SKU[key].PRICE}
 									/>
@@ -32,7 +32,7 @@ const ProductsList = ({ products }) => {
 							<ProductCard
 								key={product.ID}
 								picture={product.PICTURE}
-								caption={product.NAME}
+								name={product.NAME}
 								price={product.PRICE}
 							/>
 						);
