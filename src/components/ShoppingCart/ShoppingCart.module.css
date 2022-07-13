@@ -81,7 +81,7 @@ input {
 @media screen and (max-width: 600px) {
 	table {
 		background: #fff;
-		padding: 2rem;
+		padding: 0.5rem;
 		font-size: 0.8rem;
 	}
 	.table__input {
@@ -95,5 +95,8 @@ input {
 	input {
 		width: 1.5rem;
 		text-align: center;
+	}
+	.table__deleteBtn {
+		font-size: 1.2rem;
 	}
 }
